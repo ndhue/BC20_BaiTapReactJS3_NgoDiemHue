@@ -5,7 +5,8 @@ class Users extends Component {
   renderListUser = () =>{
     const {listUser} = this.props;
     return listUser.map((user)=>{
-      return <UserItem key={user.id} user={user}/>
+      return <UserItem key={user.id} user={user} deleteUser=
+      {this.props.userDelete}/>
     })
   };
   render() {

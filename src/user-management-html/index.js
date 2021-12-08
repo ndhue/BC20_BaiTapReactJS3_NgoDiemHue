@@ -11,6 +11,22 @@ class Home extends Component {
     };
   };
 
+  _findIndex = (id) =>{
+    return this.state.listUser.findIndex((item) =>{
+      return item.id === id;
+    });
+  };
+
+  handleDelete = (user) =>{
+     const index = this._findIndex(user.id);
+     const {listUser} = this.state;
+     if(index !== -1){
+       listUser.splice(index,1);
+       this.setState({
+         listUser,
+       });
+     }
+  };
   render() {
     return (
       <div className="container">
@@ -25,7 +41,7 @@ class Home extends Component {
             Add User
           </button>
         </div>
-        <Users listUser={this.state.listUser}/>
+        <Users listUser={this.state.listUser} userDelete={this.handleDelete}/>
         <Modal />
       </div>
     );
