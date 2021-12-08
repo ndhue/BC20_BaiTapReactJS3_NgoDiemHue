@@ -1,0 +1,23 @@
+===== Buổi 1 =====
+* Component:
+    - Stateful Component: class
+    - Stateles Component: function
+*SPAs
+
+===== Buổi 2 =====
+* Install BS4
+* Rendering Elements
+    - rcc -> Stateful Component
+    - rfc -> Stateles Component
+* Handling Events
+* State: nếu như state thay đổi thì Component sẽ render lại
+* List keys
+
+==== Buổi 3 ====
+* Communication
+    - Props: truyền dữ liệu từ Component cha -> con
+    - Lifting State Up:truyền dữ liệu từ Component con -> cha
+
+=== Buổi 4 ===
+* Shopping cart
+* User management
